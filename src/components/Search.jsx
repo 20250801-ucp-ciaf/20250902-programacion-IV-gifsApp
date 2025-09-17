@@ -19,6 +19,7 @@ export const Search = ({ placeholder, onSearch }) => {
   // espera 1 segundo para ejecutar la función onSearch
   // el useEffect se ejecuta cada vez que cambia el valor de onSearch
   // el useEffect se ejecuta cada vez que cambia el valor de search
+  /*
   useEffect(() => {
     const timer = setTimeout(() => {
       if (search.trim() === "") return;
@@ -30,8 +31,10 @@ export const Search = ({ placeholder, onSearch }) => {
       clearTimeout(timer);
     };
   }, [search, onSearch]);
+  */
 
   const handleSearch = (e) => {
+    console.log("handleSearch", e.target.value);
     setSearch(e.target.value);
   };
 

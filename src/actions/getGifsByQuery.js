@@ -27,6 +27,7 @@ export const getGifsByQuery = async (query) => {
   });
 
   const data = response.data.data;
+  console.log("data", data);
 
   const responseMap = data.map((gif) => {
     return {
